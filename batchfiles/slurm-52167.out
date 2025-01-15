@@ -1,0 +1,8 @@
+usage: run_nn.py [-h] [--epochs EPOCHS] [--lr LR] [--wd WD] [--bs BS]
+                 [--gamma GAMMA] [--beta BETA] [--dset DSET] [--net NET]
+                 [--nruns NRUNS] [--target TARGET] [--log LOG] [--init INIT]
+                 [--var_t VAR_T] [--add_age ADD_AGE]
+                 [--nested_batch_size NESTED_BATCH_SIZE]
+                 [--combine_sets COMBINE_SETS] [--seed SEED]
+                 [--bootstrap BOOTSTRAP]
+run_nn.py: error: argument --wd: invalid float value: '0.003594444gamma=0.99'

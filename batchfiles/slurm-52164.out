@@ -1,0 +1,15 @@
+git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: detected dubious ownership in repository at '/home/projects/olink-aging/olink-aging'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/projects/olink-aging/olink-aging'
+git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: detected dubious ownership in repository at '/home/projects/olink-aging/olink-aging'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/projects/olink-aging/olink-aging'
+wandb: Currently logged in as: swiergarst. Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/s.garst/.netrc
+slurmstepd: error: *** JOB 52164 ON mirna CANCELLED AT 2025-01-14T09:37:19 ***

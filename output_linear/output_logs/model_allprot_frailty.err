@@ -1,0 +1,10 @@
+/home/projects/olink-aging/olink-aging/model_functions.py:5: DeprecationWarning: 
+Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+but was not found to be installed on your system.
+If this would cause problems for you,
+please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+        
+  import pandas as pd
+/home/l.m.kuiper/miniconda3/envs/olink_aging_lieke/lib/python3.12/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.005e+01, tolerance: 2.200e-02
+  model = cd_fast.enet_coordinate_descent(

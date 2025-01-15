@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/projects/olink-aging/olink-aging/run_nn.py", line 68, in <module>
+    args.add_age = convert_truefalse(args.add_age)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projects/olink-aging/olink-aging/run_nn.py", line 39, in convert_truefalse
+    raise valueError(f'unknown value to convert to true/false: {var}')
+          ^^^^^^^^^^
+NameError: name 'valueError' is not defined. Did you mean: 'ValueError'?

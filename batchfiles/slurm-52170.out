@@ -1,0 +1,49 @@
+git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: detected dubious ownership in repository at '/home/projects/olink-aging/olink-aging'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/projects/olink-aging/olink-aging'
+git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: detected dubious ownership in repository at '/home/projects/olink-aging/olink-aging'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/projects/olink-aging/olink-aging'
+wandb: Currently logged in as: swiergarst. Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/s.garst/.netrc
+wandb: wandb version 0.19.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.6
+wandb: Run data is saved locally in /home/projects/olink-aging/olink-aging/wandb/run-20250114_100005-o7y9zdt2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-brook-1378
+wandb: ⭐️ View project at https://wandb.ai/swiergarst/olink-aging-pers
+wandb: 🚀 View run at https://wandb.ai/swiergarst/olink-aging-pers/runs/o7y9zdt2
+  0%|          | 0/40 [00:00<?, ?it/s]  2%|▎         | 1/40 [00:22<14:31, 22.36s/it]  5%|▌         | 2/40 [00:46<14:46, 23.32s/it]  8%|▊         | 3/40 [01:10<14:35, 23.65s/it] 10%|█         | 4/40 [01:34<14:16, 23.79s/it] 12%|█▎        | 5/40 [01:58<13:54, 23.86s/it] 15%|█▌        | 6/40 [02:22<13:32, 23.90s/it] 18%|█▊        | 7/40 [02:45<13:00, 23.66s/it] 20%|██        | 8/40 [03:08<12:30, 23.44s/it] 22%|██▎       | 9/40 [03:31<12:01, 23.28s/it] 25%|██▌       | 10/40 [03:54<11:35, 23.18s/it] 28%|██▊       | 11/40 [04:17<11:08, 23.06s/it] 30%|███       | 12/40 [04:39<10:41, 22.93s/it] 32%|███▎      | 13/40 [05:02<10:16, 22.83s/it] 35%|███▌      | 14/40 [05:25<09:52, 22.77s/it] 38%|███▊      | 15/40 [05:47<09:27, 22.72s/it] 40%|████      | 16/40 [06:10<09:04, 22.68s/it] 42%|████▎     | 17/40 [06:32<08:41, 22.66s/it] 45%|████▌     | 18/40 [06:55<08:18, 22.64s/it] 48%|████▊     | 19/40 [07:18<07:55, 22.62s/it] 50%|█████     | 20/40 [07:40<07:32, 22.63s/it] 52%|█████▎    | 21/40 [08:03<07:09, 22.62s/it] 55%|█████▌    | 22/40 [08:25<06:46, 22.61s/it] 57%|█████▊    | 23/40 [08:48<06:24, 22.60s/it] 60%|██████    | 24/40 [09:11<06:03, 22.70s/it] 62%|██████▎   | 25/40 [09:35<05:45, 23.01s/it] 65%|██████▌   | 26/40 [09:58<05:22, 23.04s/it] 68%|██████▊   | 27/40 [10:20<04:57, 22.90s/it] 70%|███████   | 28/40 [10:43<04:33, 22.81s/it] 72%|███████▎  | 29/40 [11:05<04:10, 22.75s/it] 75%|███████▌  | 30/40 [11:28<03:46, 22.69s/it] 78%|███████▊  | 31/40 [11:51<03:23, 22.65s/it] 80%|████████  | 32/40 [12:13<03:01, 22.63s/it] 82%|████████▎ | 33/40 [12:36<02:38, 22.61s/it] 85%|████████▌ | 34/40 [12:58<02:15, 22.61s/it] 88%|████████▊ | 35/40 [13:21<01:52, 22.59s/it] 90%|█████████ | 36/40 [13:43<01:30, 22.60s/it] 92%|█████████▎| 37/40 [14:06<01:07, 22.58s/it] 95%|█████████▌| 38/40 [14:29<00:45, 22.59s/it] 98%|█████████▊| 39/40 [14:51<00:22, 22.59s/it]100%|██████████| 40/40 [15:14<00:00, 22.59s/it]100%|██████████| 40/40 [15:14<00:00, 22.86s/it]
+wandb: - 0.010 MB of 0.010 MB uploadedwandb: \ 0.010 MB of 0.010 MB uploadedwandb: | 0.028 MB of 0.028 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: concordance_train ▁▂▂▃▃▄▄▄▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇▇▇█████████████
+wandb:   concordance_val ▃▅▅▅▇▇█▇▇▆▇▅▇▆▅▆▆▆▄▅▅▄▄▃▄▃▃▃▄▄▃▄▃▃▃▃▂▁▂
+wandb:       cosim_train ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         cosim_val ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          r2_train ▁▅▇████▇█▇██▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▆▇▇▇▇▇▇▇▇▆▆
+wandb:            r2_val ▁▅▇██▇█▇█▇▇█▇▇▇▇▇▇▆▇▇▇▇▇▆▇▇▇▆▇▇▇▇▇▇▇▆▆▆
+wandb:     training_loss ██▇▇▇▇▇▆▆▆▆▅▅▅▅▅▅▄▄▄▄▃▃▃▃▃▂▂▂▂▂▃▂▂▂▂▁▁▁
+wandb:   validation_loss ▁▁▁▁▁▁▁▂▂▂▂▂▃▂▃▃▃▃▃▄▅▄▅▅▅▅▅▅▆▆▆█▇█▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb: concordance_train 0.95005
+wandb:   concordance_val 0.68775
+wandb:       cosim_train 0.0
+wandb:         cosim_val 0.0
+wandb:          r2_train 0.01401
+wandb:            r2_val 0.01027
+wandb:     training_loss 5.88483
+wandb:   validation_loss 6.99456
+wandb: 
+wandb: 🚀 View run zany-brook-1378 at: https://wandb.ai/swiergarst/olink-aging-pers/runs/o7y9zdt2
+wandb: ⭐️ View project at: https://wandb.ai/swiergarst/olink-aging-pers
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20250114_100005-o7y9zdt2/logs
