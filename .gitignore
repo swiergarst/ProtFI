@@ -3,3 +3,4 @@ archive/
 wandb/
 intermediate_results/
 other_markers/
+__pycache__/
