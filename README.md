@@ -105,7 +105,7 @@ In order to run the bootstrapping procedure as reported in figure 1 of the paper
 
 
 # Forward Feature Selection (FFS)
-The forward feature selection (FFS) procedure is implemented in `forward_selection.py`. By simply running `python forward_selectin.py`, the forward feature selection procedure for protFI is replicated. for protMort, change the `--target` argument to 'mort', i.e. by running `python forward_selection.py --target mort`. Finally, the performance increase threshold can be changed by modifying the `--tol` flag. The proteins used for protFI are found [here](output_linear/coefs_frail/ffs_coefs_cmb_tol0.001.csv), and for protMort [here](output_linear/coefs_mort/ffs_coefs_cmb_tol0.001.csv).
+The forward feature selection (FFS) procedure is implemented in `forward_selection.py`. By simply running `python forward_selection.py`, the forward feature selection procedure for protFI is replicated. for protMort, change the `--target` argument to 'mort', i.e. by running `python forward_selection.py --target mort`. Finally, the performance increase threshold can be changed by modifying the `--tol` flag. The proteins used for protFI are found [here](output_linear/coefs_frail/ffs_coefs_cmb_tol0.001.csv), and for protMort [here](output_linear/coefs_mort/ffs_coefs_cmb_tol0.001.csv).
 
 # multi-omics 
 
