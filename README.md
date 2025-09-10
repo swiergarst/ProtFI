@@ -2,7 +2,7 @@ This repository holds the code to reproduce the figures and analyses presented i
 
 # Installation
 
-A conda environment can be installed using the `[env_file.txt](env_file.txt)`, by running 
+A conda environment can be installed using the `env_file.txt`, by running 
 ```
     conda create --name protFI --file env_file.txt
 ```
