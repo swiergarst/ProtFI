@@ -1,5 +1,21 @@
 This repository holds the code to reproduce the figures and analyses presented in XX. For using the developed biomarkers (protFI / protMort), we refer to [RS_association_analysis.ipynb](RS_association_analysis.ipynb), which holds examples of association analyses on an independent test set. The rest of this readme will elaborate on how to reproduce the model training procedure presented in the paper.
 
+You can also calculate ProtFI and ProtMort via the R-package ProtBiom. 
+Therefore, you first need to install `devtools` (if not already installed) via
+```
+install.packages('devtools')
+```
+To install the package you need to run
+
+```
+devtools::install_github("swiergarst/ProtFI", subdir = "ProtBiom")
+```
+To load the package the command is
+```
+library('ProtBiom')
+```
+A more in depth README is available in the ProtBiom folder.
+
 # Installation
 
 A conda environment can be installed using the `env_file.txt`, by running 
