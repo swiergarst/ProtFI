@@ -1,0 +1,18 @@
+# RStudio files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# macOS
+.DS_Store
+
+# R package build/check output
+.Rcheck/
+*.tar.gz
+
+# Local projects
+*.Rproj
+
+# Tests
+tests/

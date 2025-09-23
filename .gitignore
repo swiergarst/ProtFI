@@ -4,3 +4,4 @@ wandb/
 intermediate_results/
 other_markers/
 __pycache__/
+.Rproj.user
