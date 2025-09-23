@@ -1,7 +1,8 @@
-Data/
-archive/
-wandb/
-intermediate_results/
-other_markers/
+/Data/
+/archive/
+/wandb/
+/intermediate_results/
+/other_markers/
 __pycache__/
 .Rproj.user
+!ProtBiom/data/**
