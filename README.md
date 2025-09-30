@@ -1,4 +1,4 @@
-This repository holds the code to reproduce the figures and analyses presented in XX. For using the developed biomarkers (protFI / protMort), we refer to [RS_association_analysis.ipynb](RS_association_analysis.ipynb), which holds examples of association analyses on an independent test set. The rest of this readme will elaborate on how to reproduce the model training procedure presented in the paper.
+This repository holds the code to reproduce the figures and analyses presented in [ProtFI, an efficient frailty-trained proteomics-based biomarker of aging, robustly predicts age-related decline]("https://www.medrxiv.org/content/10.1101/2025.09.19.25336152v1"). For using the developed biomarkers (protFI / protMort), we refer to [RS_association_analysis.ipynb](RS_association_analysis.ipynb), which holds examples of association analyses on an independent test set. The rest of this readme will elaborate on how to reproduce the model training procedure presented in the paper.
 
 You can also calculate ProtFI and ProtMort via the R-package ProtBiom. 
 Therefore, you first need to install `devtools` (if not already installed) via
@@ -98,13 +98,13 @@ The total size of the grid is defined by the `--counts` command line input. The 
     python nn_gridsearch.py --lrmin -8 --lrmax -4 --wdmin -5 --wdmax -3 --bsmin 32 --bsmax 2000 --counts 10000
 ```
 
-creates a sweep with a learning rate between 1 * 10^-8 and 1 * 10^-4, l2 regularization between 1 * 10^-5 and 1 * 10^-3 and a batch size between 32 and 2000. for each parameter, there are `floor($\sqrt[3]{10000}$)  = XX` options that are tried.
+creates a sweep with a learning rate between 1 * 10^-8 and 1 * 10^-4, l2 regularization between 1 * 10^-5 and 1 * 10^-3 and a batch size between 32 and 2000. for each parameter, there are `floor($\sqrt[3]{10000}$)` options that are tried.
 
 ### Other parameters
 `epochs` defines the number of training epochs used. There are two command line inputs that define the dataset (input size) and training target; `--dset` can be 'allprot', 'cmb' or 'cmb_ffs'.'allprot' uses all 1428 proteins, 'cmb' only uses the cardiometabolic olink panel, and 'cmb_ffs' uses the proteins selected from this panel using forward feature selection. `--target` can be `mort` or `frailty` to train on mortality or frailty, respectively.
 
 Finally, weights and biases has the option to run multiple _sweep agents_ in parallel. This allows speedup of the gridsearch, given enough computational resources. the command line argument `--sweep_pid` allows for this funtionality; First, start a sweep by keeping this value 0 (default). Then, once the sweep has started, find the sweep pid on the wandb sweeps page of your wandb project. This should note the sweep id of the specific sweep you are running.
-[XX: screenshot of a sweep with sweep pid?]
+
 when launching another sweep agent on the same sweep, simply run
 ```
     python nn_grisearch.py --sweep_pid wandb_sweep_pid
@@ -113,7 +113,7 @@ with the specific sweep pid of your sweep.
 
 ## Model training
 
-To train a deep learning model with a given set of parameters, run `run_nn.py`. There are various command line arguments to set hyperparameters and run configurations, which are defined in `run_nn.py` itself (line 43-55). if ran without any parameters (i.e. `python run_nn.py`), default parameters will be used, which will result in training the reported model on the cardiometabolic proteins, predicting frailty XX.
+To train a deep learning model with a given set of parameters, run `run_nn.py`. There are various command line arguments to set hyperparameters and run configurations, which are defined in `run_nn.py` itself (line 43-55). if ran without any parameters (i.e. `python run_nn.py`), default parameters will be used, which will result in training the reported model on the cardiometabolic proteins, predicting frailty.
 
 ### Bootstrap
 In order to run the bootstrapping procedure as reported in figure 1 of the paper, use the `--bootstrap` argument in `run_.py`, i.e. `python run_nn.py --bootstrap 1` will run a bootstrap on the cardiometabolic proteins, predicting frailty. This will create one instance of the bootstrap, so this will have to be rerun for as many bootstraps as is desired (e.g. 100 times for what was reported in the paper). This is easiest done using a bash script such as `[nn_bootstrap.sh](batchfiles/nn_bootstrap.sh)`, though `sbatch` should be replaced by `python` when not using a SLURM scheduler.
@@ -122,7 +122,3 @@ In order to run the bootstrapping procedure as reported in figure 1 of the paper
 
 # Forward Feature Selection (FFS)
 The forward feature selection (FFS) procedure is implemented in `forward_selection.py`. By simply running `python forward_selection.py`, the forward feature selection procedure for protFI is replicated. for protMort, change the `--target` argument to 'mort', i.e. by running `python forward_selection.py --target mort`. Finally, the performance increase threshold can be changed by modifying the `--tol` flag. The proteins used for protFI are found [here](output_linear/coefs_frail/ffs_coefs_cmb_tol0.001.csv), and for protMort [here](output_linear/coefs_mort/ffs_coefs_cmb_tol0.001.csv).
-
-# multi-omics 
-
-TBD
