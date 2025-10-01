@@ -171,5 +171,5 @@ You can override any of these with your own `coef_df` or `highcor_df`.
 
 ## Citation
 
-If you use **ProtFI** or **ProtMort**, please cite the original paper.
+If you use **ProtFI** or **ProtMort**, please cite the original paper; doi: https://doi.org/10.1101/2025.09.19.25336152
 If you use **ProtBiom**, please cite this repository as well.
