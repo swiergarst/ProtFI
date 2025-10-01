@@ -8,7 +8,6 @@ This package helps you compute two published protein scores—**ProtFI** and **P
 ## Installation
 
 ```r
-# From GitHub
 # install.packages('devtools')
 devtools::install_github("swiergarst/ProtFI", subdir = "ProtBiom")
 ```
