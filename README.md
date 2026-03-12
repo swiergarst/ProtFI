@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/912797155.svg)](https://doi.org/10.5281/zenodo.18982933)
+
 This repository holds the code to reproduce the figures and analyses presented in [ProtFI, an efficient frailty-trained proteomics-based biomarker of aging, robustly predicts age-related decline](https://www.medrxiv.org/content/10.1101/2025.09.19.25336152v2). For using the developed biomarkers (ProtFI / ProtMort), we refer to [RS_association_analysis.ipynb](RS_association_analysis.ipynb), which holds examples of association analyses on an independent test set. The rest of this readme will elaborate on how to reproduce the model training procedure presented in the paper.
 
 You can also calculate ProtFI and ProtMort via the [R-package ProtBiom](ProtBiom). 
